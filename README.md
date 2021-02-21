@@ -2,7 +2,7 @@
 <h1 align="center">Aprendiendo Java y SpringBoot</h1>
 
 <h1 align="center">
-  <img src="https://github.com/Ing-Brayan-Martinez/Dart-Algorithm-Example/blob/master/docs/spring-ecosystem-750x410.jpg" alt="SpringBoot" width="800"/>
+  <img src="https://github.com/Ing-Brayan-Martinez/Java-Algorithm-Example/blob/master/docs/spring-ecosystem-750x410.jpg" alt="SpringBoot" width="800"/>
 </h1>
 
 [![Build Status](https://travis-ci.org/leerob/dart-react-todo.svg?branch=master)](https://travis-ci.org/leerob/dart-react-todo)
