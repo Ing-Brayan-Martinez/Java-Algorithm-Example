@@ -9,32 +9,37 @@
 [![codecov](https://codecov.io/gh/leerob/dart-react-todo/branch/master/graph/badge.svg)](https://codecov.io/gh/leerob/dart-react-todo)
 [![Strong Mode Compliant](https://img.shields.io/badge/strong_mode-on-brightgreen.svg)](https://github.com/leerob/dart-react-todo/blob/master/analysis_options.yaml#L2)
 
-### Visión de conjunto
+### Introduccion
 
-En estos tiempos el uso de plataformas basadas en cloud es tan popular, es por eso que necesario crear soluciones adptadas ha este tipo de
-paradigmas. Hay un millón de formas diferentes de crear una aplicación web en el paisaje actual. Diferentes idiomas y frameworks van y
-vienen y varían en popularidad. El objetivo de este documento es informarle sobre el uso de Spring Framework para crea plataformas basadas en
-micro-servicios, usando el patron de arquitectura hexagonal. En este repo se encuentra una aplicacion echa con spring framework planteada
-con el patron de arquitectura hexagonal y con integracion para enviar correos electronicos y con el sistema de colas RabbitMQ.
+En estos tiempos el uso de plataformas basadas en cloud es tan popular, es por eso que necesario crear soluciones adptadas 
+ha este tipo de paradigmas. Hay un millón de formas diferentes de crear una aplicación web en el paisaje actual. Diferentes 
+idiomas y frameworks van y vienen y varían en popularidad. El objetivo de este documento es informarle sobre el uso de Spring 
+Framework para crea plataformas basadas en micro-servicios, usando el patron de arquitectura hexagonal. En este repo se
+encuentra una aplicacion echa con spring framework planteada con el patron de arquitectura hexagonal y con integracion para
+enviar correos electronicos y con el sistema de colas RabbitMQ.
 
 ### Tabla de Contenidos
 
-- [Inicio rápido](#inicio-rápido)
+- [Que es Java?](#que-es-java)
 - [Que es Spring?](#que-es-spring)
 - [Que es la arquitectura hexagonal?](#que-es-la-arquitectura-hexagonal)
 - [Referencias](#referencias)
 
-### Inicio rápido
+### Que es Java?
 
-```bash
-$ git clone https://github.com/Ing-Brayan-Martinez/Java-SpringBoot-Example.git
-$ cd Java-SpringBoot-Example/Java-SpringBoot-Data/Java-SpringBoot-JPA
-$ mvn install
-$ cd target
-$ java -jar Java-SpringBoot-JPA.jar
-```
+Java es un lenguaje de programación y una plataforma informática que fue comercializada por primera vez en 1995 por
+Sun Microsystems. Hay muchas aplicaciones y sitios web que no funcionarán, probablemente, a menos que tengan Java instalado 
+y cada día se crean más. Java es rápido, seguro y fiable. Desde ordenadores portátiles hasta centros de datos, desde consolas 
+para juegos hasta computadoras avanzadas, desde teléfonos móviles hasta Internet, Java está en todas partes, si es ejecutado
+en una plataforma no tiene que ser recompilado para correr en otra. Java es, a partir de 2012, uno de los lenguajes de
+programación más populares en uso, particularmente para aplicaciones de cliente-servidor de web, con unos diez millones de
+usuarios reportados.2​3​
 
-Abra http://localhost:8080/ para ver la aplicación.
+El lenguaje de programación Java fue desarrollado originalmente por James Gosling, de Sun Microsystems (constituida en 1983 
+y posteriormente adquirida el 27 de enero de 2010 por la compañía Oracle),4​ y publicado en 1995 como un componente 
+fundamental de la plataforma Java de Sun Microsystems. Su sintaxis deriva en gran medida de C y C++, pero tiene menos 
+utilidades de bajo nivel que cualquiera de ellos. Las aplicaciones de Java son compiladas a bytecode (clase Java), que
+puede ejecutarse en cualquier máquina virtual Java (JVM) sin importar la arquitectura de la computadora subyacente.
 
 ### Que es Spring?
 
@@ -66,11 +71,12 @@ aplicación. Esto permite un aislamiento de mayor nivel, testabilidad, y control
 de la aplicación tiene un estricto grupo de responsabilidades y requerimientos. Esto crea separaciones más claras entre la lógica
 y la funcionalidad, y como esas capas deberían interactuar entre ellas.
 
-Cada parte del hexágono representa un input – puerto, por ejemplo HTTP, que utiliza un adaptador para un tipo específico. Crea una
-separación clara entre el modelo domain y los dispositivos utilizados para las entradas o salidas.
+Cada parte del hexágono representa un input – puerto, por ejemplo HTTP, que utiliza un adaptador para un tipo específico. Crea 
+una separación clara entre el modelo domain y los dispositivos utilizados para las entradas o salidas.
 
 ### Referencias
 
+- [Que es Java?](https://es.wikipedia.org/wiki/Java_(lenguaje_de_programaci%C3%B3n))
 - [Que es Spring?](http://www.jtech.ua.es/j2ee/publico/spring-2012-13/sesion01-apuntes.html)
 - [Que es la arquitectura hexagonal?](https://apiumhub.com/es/tech-blog-barcelona/arquitectura-hexagonal/)
 - [Arquitectura hexagonal](https://codely.tv/screencasts/arquitectura-hexagonal-ddd/)
