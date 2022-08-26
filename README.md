@@ -2,7 +2,7 @@
 <h1 align="center">Aprendiendo  el Lenguaje Java</h1>
 
 <h1 align="center">
-  <img src="https://github.com/Ing-Brayan-Martinez/Java-Algorithm-Example/blob/master/assest/spring-ecosystem-750x410.jpg" alt="Java" width="800"/>
+  <img src="https://github.com/Ing-Brayan-Martinez/Java-Algorithm-Example/blob/master/assest/java.jpg" alt="Java" width="800"/>
 </h1>
 
 [![Build Status](https://travis-ci.org/leerob/dart-react-todo.svg?branch=master)](https://travis-ci.org/leerob/dart-react-todo)
