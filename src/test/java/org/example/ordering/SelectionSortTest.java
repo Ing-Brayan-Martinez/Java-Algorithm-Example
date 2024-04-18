@@ -11,7 +11,7 @@ public class SelectionSortTest {
         System.out.print("-- SelectionSort -- \n\n");
 
         //before
-        System.out.print("Before Sorting: ");
+        System.out.println("Before Sorting: ");
         Data.printData(data);
 
         //sort
@@ -20,7 +20,7 @@ public class SelectionSortTest {
         instance.apply(data);
 
         //after
-        System.out.print("After Sorting: ");
+        System.out.println("After Sorting: ");
         Data.printData(data);
 
         System.out.print("\nTest Passed!");

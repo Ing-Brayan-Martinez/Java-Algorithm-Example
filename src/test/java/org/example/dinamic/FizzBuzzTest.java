@@ -7,7 +7,7 @@ public class FizzBuzzTest {
     void testFizzBuzz() {
         final Integer num = 20;
 
-        final var instance = new Fibonacci();
+        final var instance = new FizzBuzz();
 
         System.out.print("-- FizzBuzz -- \n\n");
 
