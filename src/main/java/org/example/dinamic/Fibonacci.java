@@ -8,7 +8,6 @@ public final class Fibonacci implements Function<Integer, Integer> {
         if (n <= 1) {
             return n;
         }
-
         return apply(n - 1) + apply(n - 2);
     }
 }

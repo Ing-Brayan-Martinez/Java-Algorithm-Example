@@ -9,11 +9,11 @@ public class FibonacciTest {
         final Integer num = 20;
         final Integer expectedValue = 6765;
 
+        System.out.print("-- Fibonacci -- \n\n");
+
         final var instance = new Fibonacci();
 
         var resultValue = instance.apply(num);
-
-        System.out.print("-- Fibonacci -- \n\n");
 
         System.out.printf("Fibonacci of %s  is %s \n\n", num, resultValue);
 
