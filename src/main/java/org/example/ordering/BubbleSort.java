@@ -6,16 +6,16 @@ import java.util.function.Function;
 public final class BubbleSort implements Function<List<Integer>, Void> {
     @Override
     public Void apply(List<Integer> data) {
-        var swap_check = true;
-        var n = data.size();
-
-        for (var i = 0; (i < n) && (swap_check); i++) {
-            swap_check = false;
-            for (var j = 0; j < n - 1 - i; j++) {
+        for (var i = 0; i < data.size() - 1; i++) {
+            var breakCount = 0;
+            for (var j = 0; j < data.size() - i - 1; j++) {
                 if (data.get(j) > data.get(j + 1) ) {
-                    swap_check = true;
                     this.swap(j, j + 1, data);
+                    breakCount++;
                 }
+            }
+            if (breakCount == 0) {
+                break;
             }
         }
         return null;
