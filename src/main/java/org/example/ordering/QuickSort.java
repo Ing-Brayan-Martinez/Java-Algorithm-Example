@@ -18,16 +18,6 @@ public final class QuickSort implements Function<List<Integer>, Void> {
         return null;
     }
 
-    private void swap(List<Integer> data, Integer first, Integer second) {
-        var value1 = data.get(first);
-        var value2 = data.get(second);
-        var temp = value1;
-        value1 = value2;
-        value2 = temp;
-        data.set(first, value1);
-        data.set(second, value2);
-    }
-
     private int partition(List<Integer> data, Integer lower, Integer upper) {
         int i = (lower - 1);
         int pivot = data.get(upper);
@@ -35,11 +25,11 @@ public final class QuickSort implements Function<List<Integer>, Void> {
         for (int j = lower; j < upper; j++) {
             if (data.get(j) <= pivot) {
                 i++;
-                this.swap(data,i, j);
+                this.swap(i, j, data);
             }
         }
 
-        this.swap(data, i + 1, upper);
+        this.swap( i + 1, upper, data);
         return (i + 1);
     }
 
@@ -54,5 +44,15 @@ public final class QuickSort implements Function<List<Integer>, Void> {
             this.internalQuickSort(data, lower, partitionIndex - 1);
             this.internalQuickSort(data, partitionIndex + 1, upper);
         }
+    }
+
+    private void swap(Integer first, Integer second, List<Integer> data) {
+        var value1 = data.get(first);
+        var value2 = data.get(second);
+        final var temp = value1;
+        value1 = value2;
+        value2 = temp;
+        data.set(first, value1);
+        data.set(second, value2);
     }
 }
